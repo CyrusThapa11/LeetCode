@@ -17,30 +17,34 @@ public:
 class Solution {
 public:
     Node* copyRandomList(Node* h) {
-        unordered_map<Node*,Node*>mp;
-        Node*t=h,*p=h;
-        while(h){
-            Node*c=NULL;
-            if(mp.find(h)==mp.end()){
-                c=new Node(h->val);
-                mp[h]=c;
-            }
-            
-            c = mp[h];
-            if(mp.find(h->next)==mp.end()){
-                Node*t=h->next ? new Node(h->next->val):NULL;
-                mp[h->next] = t;
-            }
-            
-            c->next=mp[h->next];
-            if(mp.find(h->random)==mp.end()){
-                Node*t=h->random ? new Node(h->random->val):NULL;
-                mp[h->random] = t;
-            }            
-            c->random=mp[h->random];
-            
-            h=h->next;
+        
+        Node*t=h,*p=h,*ans,*help=new Node(0);
+        
+        while(t){
+            Node* nxt = t->next;
+            t->next=new Node(t->val);
+            t->next->next=nxt;
+            t=nxt;
         }
-        return mp[p];
+        
+        // copy random ptr :     
+        t=p;        
+        while(t){
+            if(t->random)t->next->random = t->random->next;            
+            t=t->next->next;
+        }
+        
+        t=p;
+        ans=help;
+        while(t){
+            // Update answers ptrs
+            help->next = t->next;
+            help = help->next;
+            
+            // Update original links
+            t->next = t->next->next;
+            t=t->next;
+        }        
+        return ans->next;
     }
 };
