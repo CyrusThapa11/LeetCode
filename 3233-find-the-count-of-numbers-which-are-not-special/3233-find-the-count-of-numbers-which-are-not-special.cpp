@@ -3,7 +3,7 @@ public:
     
     vector<int>getPrimes(int n) {
         //debug("here");
-        int lim = 2e5 + 100;
+        int lim = 2e5+ 1;
         int a[lim];
         memset(a, 1, sizeof a);
         a[1] = 0;
