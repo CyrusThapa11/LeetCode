@@ -32,7 +32,7 @@ public:
         // 1,-1,2, -2 , 3, -3,4, -1,5, -2, 6, -3 , 7
     }
 
-    TreeNode* go(vector<int>v,int l,int &pos) {
+    TreeNode* go(vector<int>&v,int l,int &pos) {
         if(pos == v.size())return NULL;
         TreeNode*c = new TreeNode(v[pos++]);
         
