@@ -13,6 +13,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [2107-find-unique-binary-string](https://github.com/CyrusThapa11/LeetCode/tree/master/2107-find-unique-binary-string) |
 | [2308-divide-array-into-equal-pairs](https://github.com/CyrusThapa11/LeetCode/tree/master/2308-divide-array-into-equal-pairs) |
+| [2478-longest-nice-subarray](https://github.com/CyrusThapa11/LeetCode/tree/master/2478-longest-nice-subarray) |
 | [2665-minimum-time-to-repair-cars](https://github.com/CyrusThapa11/LeetCode/tree/master/2665-minimum-time-to-repair-cars) |
 | [3227-find-missing-and-repeated-values](https://github.com/CyrusThapa11/LeetCode/tree/master/3227-find-missing-and-repeated-values) |
 | [3483-alternating-groups-ii](https://github.com/CyrusThapa11/LeetCode/tree/master/3483-alternating-groups-ii) |
@@ -70,11 +71,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/CyrusThapa11/LeetCode/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
+| [2478-longest-nice-subarray](https://github.com/CyrusThapa11/LeetCode/tree/master/2478-longest-nice-subarray) |
 | [3483-alternating-groups-ii](https://github.com/CyrusThapa11/LeetCode/tree/master/3483-alternating-groups-ii) |
 ## Bit Manipulation
 |  |
 | ------- |
 | [2308-divide-array-into-equal-pairs](https://github.com/CyrusThapa11/LeetCode/tree/master/2308-divide-array-into-equal-pairs) |
+| [2478-longest-nice-subarray](https://github.com/CyrusThapa11/LeetCode/tree/master/2478-longest-nice-subarray) |
 ## Counting
 |  |
 | ------- |
